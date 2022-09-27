@@ -1,0 +1,110 @@
+:root {
+  --font-color-light: #eee;
+  --font-color-dark: #222;
+  --color-primary: rgba(44, 51, 51, 0.9);
+  --color-secondary: rgba(57, 91, 100, 0.9);
+  --color-hover: #a5c9ca6b;
+  --color-primary-hover: rgba(44, 51, 51, 0.5);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: var(--color-primary);
+  color: var(--font-color-primary);
+  background-image: url("./images/ramen-background.jpg");
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+button {
+  font-family: inherit;
+  color: inherit;
+  cursor: pointer;
+  border-style: none;
+  outline: none;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 100vh;
+}
+
+.header,
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 32px;
+  width: 100%;
+  padding: 32px;
+  background-color: var(--color-secondary);
+  color: var(--font-color-light);
+}
+
+.header-title {
+  font-size: 3rem;
+  font-family: "Courier New", Courier, monospace;
+}
+
+.header-nav {
+  display: flex;
+  gap: 32px;
+}
+
+.nav-btn {
+  padding: 8px 24px;
+  font-size: 1.2rem;
+  background-color: transparent;
+  border: 1px solid var(--font-color-light);
+  border-radius: 3px;
+}
+
+.nav-btn:hover {
+  background-color: var(--color-primary-hover);
+}
+
+.home-btn:hover {
+  background-color: var(--color-hover);
+}
+
+.btn-active {
+  background-color: var(--color-primary);
+}
+
+.home {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 48px;
+  background-color: var(--color-primary);
+  color: var(--font-color-light);
+  font-size: 1.2rem;
+  width: 768px;
+  height: 468px;
+  border-radius: 5px;
+}
+
+.footer {
+  gap: 16px;
+}
+
+.home-btn {
+  padding: 16px 48px;
+  background-color: var(--color-secondary);
+  color: var(--font-color-light);
+  border-radius: 3px;
+  font-size: 1.5rem;
+}

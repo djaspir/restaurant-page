@@ -1,4 +1,5 @@
 import loadHome from "./home";
+import loadMenu from "./menu";
 
 function createHeader() {
   const header = document.createElement("header");
@@ -59,6 +60,16 @@ function createButton(textContent) {
   newButton.addEventListener("click", (e) => {
     if (e.target.classList.contains("btn-active")) return;
     setActiveButton(newButton);
+    switch (textContent) {
+      case "Home":
+        console.log(textContent);
+        loadHome();
+        break;
+      case "Menu":
+        console.log(textContent);
+        loadMenu();
+        break;
+    }
   });
 
   return newButton;

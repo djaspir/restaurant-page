@@ -83,7 +83,8 @@ button {
   background-color: var(--color-primary);
 }
 
-.home {
+.home,
+.contact {
   display: flex;
   flex-direction: column;
   justify-content: center;

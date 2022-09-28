@@ -1,5 +1,6 @@
 import loadHome from "./home";
 import loadMenu from "./menu";
+import loadContact from "./contact";
 
 function createHeader() {
   const header = document.createElement("header");
@@ -68,6 +69,10 @@ function createButton(textContent) {
       case "Menu":
         console.log(textContent);
         loadMenu();
+        break;
+      case "Contact":
+        console.log(textContent);
+        loadContact();
         break;
     }
   });

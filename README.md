@@ -2,7 +2,7 @@
 
 Restaurant page created with HTML, CSS and JS.
 
-[Live Demo](https://michalosman.github.io/restaurant-page/) :point_left:
+[Live Demo](https://djaspir.github.io/restaurant-page/) :point_left:
 
 ## Getting Started
 
